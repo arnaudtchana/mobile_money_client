@@ -76,13 +76,13 @@ app
                 map: $scope.map,
                 animation: google.maps.Animation.DROP,
                 position: markerPos,
-                icon: {
-                  url: "../img/location.png",
+                /*icon: {
+                  //url: "../img/location.png",
                   size: {
                     width: 60,
                     height: 60
                   }
-                }
+                }*/
               });
               var infoWindowContent = "<h4>" + value.description +","+value.quartier+ "</h4>";
 
@@ -120,6 +120,7 @@ app
          title: 'Alert',
          templateUrl: 'templates/alert_localisation.html'
          });*/
+        alert('Activer votre Gps')
         console.log("Could not get location");
       });
     });
