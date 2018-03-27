@@ -1,0 +1,9 @@
+<ion-content ng-controller="AccueilCtrl">
+  <div>on affiche la liste des services provenant de la base de donnees pour que lutilisateur choisisse
+  le service qui l'interesse
+  </div>
+
+  <div ng-repeat="service in services">
+    <a ng-click="rechercher_service(service.id)">{{service.nom}}</a>
+  </div>
+</ion-content>
