@@ -70,19 +70,19 @@ app
             console.log($scope.services);
             angular.forEach($scope.services,function (value,key) {
               /*ici chaque marqueur va venir avec son image correspondante*/
-              console.log('je passe ici')
+              //console.log(data.icone)
               var markerPos = new google.maps.LatLng(value.latitude, value.longitude);
               var marker = new google.maps.Marker({
                 map: $scope.map,
                 animation: google.maps.Animation.DROP,
                 position: markerPos,
-                /*icon: {
-                  //url: "../img/location.png",
-                  size: {
-                    width: 60,
-                    height: 60
-                  }
-                }*/
+                icon: {
+                  url:data.icone
+                 /* size: {
+                    width: 50,
+                    height: 50
+                  }*/
+                }
               });
               var infoWindowContent = "<h4>" + value.description +","+value.quartier+ "</h4>";
 
