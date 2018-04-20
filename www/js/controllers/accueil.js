@@ -8,7 +8,8 @@ app
   * pour que lutilisateur choisisse le service qui l'interesse*/
     $scope.$on('$ionicView.enter', function () {
   $scope.services = {};
- var Services = Restangular.all('service');
+ //var Services = Restangular.all('service');
+ var Services = Restangular.all('service_logo');
 
   Services.getList().then(function (data) {
     $scope.services = data;

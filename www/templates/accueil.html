@@ -4,6 +4,9 @@
   </div>
 
   <div ng-repeat="service in services">
-    <a ng-click="rechercher_service(service.id)">{{service.nom}}</a>
+    <li ng-click="rechercher_service(service.id)">
+      <img src="{{service.lien_logo}}"/>
+      <a>{{service.nom}}</a>
+    </li>
   </div>
 </ion-content>
