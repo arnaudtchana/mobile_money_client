@@ -70,7 +70,7 @@ app
             console.log($scope.services);
             angular.forEach($scope.services,function (value,key) {
               /*ici chaque marqueur va venir avec son image correspondante*/
-              //console.log(data.icone)
+              console.log(data.icone)
               var markerPos = new google.maps.LatLng(value.latitude, value.longitude);
               var marker = new google.maps.Marker({
                 map: $scope.map,

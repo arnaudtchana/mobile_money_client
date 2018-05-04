@@ -14,5 +14,8 @@
   "gulpStartupTasks": [
     "sass",
     "watch"
-  ]
+  ],
+  "gulp": {
+    "enabled": false
+  }
 }
